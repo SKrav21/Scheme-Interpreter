@@ -1,0 +1,59 @@
+<Define>
+  <Identifier val='both-true' />
+  <Lambda>
+    <Formals>
+      <Identifier val='x' />
+      <Identifier val='y' />
+    </Formals>
+    <Expressions>
+      <Cond>
+        <Condition>
+          <Test>
+            <And>
+              <Identifier val='x' />
+              <Identifier val='y' />
+            </And>
+          </Test>
+          <Actions>
+            <Tick>
+              <Symbol val='both' />
+            </Tick>
+          </Actions>
+        </Condition>
+        <Condition>
+          <Test>
+            <Identifier val='x' />
+          </Test>
+          <Actions>
+            <Tick>
+              <Symbol val='justx' />
+            </Tick>
+          </Actions>
+        </Condition>
+        <Condition>
+          <Test>
+            <Identifier val='y' />
+          </Test>
+          <Actions>
+            <Tick>
+              <Symbol val='justy' />
+            </Tick>
+          </Actions>
+        </Condition>
+        <Condition>
+          <Test>
+            <Bool val='true' />
+          </Test>
+          <Actions>
+            <Bool val='false' />
+          </Actions>
+        </Condition>
+      </Cond>
+    </Expressions>
+  </Lambda>
+</Define>
+<Apply>
+  <Identifier val='both-true' />
+  <Int val='1' />
+  <Int val='2' />
+</Apply>

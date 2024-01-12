@@ -1,0 +1,27 @@
+<Define>
+ <Identifier val='v' />
+ <Tick>
+  <Vector>
+   <Int val='1' />
+   <Int val='2' />
+   <Int val='3' />
+   <Int val='4' />
+   <Int val='5' />
+  </Vector>
+ </Tick>
+</Define>
+<Apply>
+ <Identifier val='vector-set!' />
+ <Identifier val='v' />
+ <Int val='1' />
+ <Tick>
+  <Cons>
+   <Int val='5' />
+   <Cons>
+    <Null />
+    <Null />
+   </Cons>
+  </Cons>
+ </Tick>
+</Apply>
+<Identifier val='v' />
